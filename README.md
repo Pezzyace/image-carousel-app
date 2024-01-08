@@ -1,1 +1,4 @@
-# image-carousel-app
+# Image Carousel
+
+  - Tailwind
+  - JS
