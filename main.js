@@ -16,25 +16,6 @@ buttons.forEach(button => {
 
     slides.children[newIndex].dataset.active = true;
     delete activeSlide.dataset.active;
-
-    if(button.dataset.carouselButton === "next") {
-      const page = document.getElementById("page");
-
-      pageNumber++;
-      page.innerHTML = pageNumber;
-      console.log(pageNumber);
-
-      if (pageNumber >= 19) {
-        pageNumber = 0;
-      } 
-    }else{
-      pageNumber--;
-      page.innerHTML = pageNumber;
-      console.log(pageNumber);
-
-      if(pageNumber <= 0) {
-        pageNumber = 19;
-      }
-    }
+    
   });
 });
